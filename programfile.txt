@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 	system("chcp 1251");
 	srand(time(NULL));
-	string characters = "ABCDEFGHIJKLMNOPRSTUWXYZabcdefghijklmnoprstuwxyz"; // Введите сюда свои символы для пароля без пробелов
+	string characters = "ABCDEFGHIJKLMNOPRSTUWXYZabcdefghijklmnoprstuwxyz1234567890?!"; // Введите сюда свои символы для пароля без пробелов
 	int length, x, a;
 	cout << "Задайте длинну пароля: ";
 	cin >> length;
