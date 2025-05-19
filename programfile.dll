@@ -1,0 +1,23 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+int main() {
+	system("chcp 1251");
+	srand(time(NULL));
+	string characters = "abcdefghijklmnoprstuwxyz"; // Введите сюда свои символы для пароля без пробелов
+	int length, x, a;
+	cout << "Задайте длинну пароля: ";
+	cin >> length;
+	cout << "\n" << endl;
+	cout << "-------------------------------------------" << endl;
+	cout << "Ваш пароль: ";
+	for (int i = 0; i < length; i++) {
+		x = rand() % characters.length();
+		cout << characters[x];
+	}
+	cout << "\n" << "-------------------------------------------" << endl;
+	cout << "\n" << endl;
+	system("pause");
+	return 0;
+}
